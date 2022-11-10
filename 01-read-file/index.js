@@ -6,6 +6,5 @@ const stream = fs.createReadStream('text.txt', 'utf-8');
 let data = '';
 stream.on('data', chunk => data += chank);
 
-
 const {stdout} = process;
-stout.write(data);
+stdout.write(data);
